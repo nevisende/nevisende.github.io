@@ -44,10 +44,20 @@
   padding: 1rem 0.7rem 1rem 0.7rem;
   margin-right: 5vw;
   transition: border 0.3s ease;
+  gap: 0.2rem;
 }
 
 .main-schedule-container ul li:hover {
   border: solid #fff 0.3rem;
+}
+
+.main-schedule-container ul li img,
+.main-schedule-container ul li h3 {
+  flex: 1;
+}
+
+.main-schedule-container ul li p {
+  flex: 3;
 }
 
 .schedule-desktop-button {
