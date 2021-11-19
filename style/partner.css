@@ -1,0 +1,48 @@
+.partner-container {
+  background-color: var(--main-bg-color);
+}
+
+.partner-title {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.partner-title::after {
+  content: '';
+  width: 3.5rem;
+  height: 0.1rem;
+  background-color: var(--main-second-color);
+  bottom: -2rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.first-line-partner,
+.second-line-partner {
+  width: 100vw;
+}
+
+.img-partner {
+  width: 25%;
+  text-align: center;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  .img-partner {
+    display: inline-block;
+    width: 12vw;
+  }
+
+  .first-line-partner,
+  .second-line-partner {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+  }
+}

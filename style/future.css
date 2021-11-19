@@ -1,0 +1,117 @@
+.future {
+  border-top: solid #d3d3d3 0.05rem;
+}
+
+.future-title {
+  position: relative;
+}
+
+.future-title::after {
+  content: '';
+  width: 1.5rem;
+  height: 0.1rem;
+  background-color: var(--main-second-color);
+  bottom: -2rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#future-winter {
+  background: url('../content/winter.jpg');
+  background-size: cover;
+  width: 80vw;
+  height: 40vw;
+}
+
+#future-spring {
+  background: url('../content/spring.jpg');
+  background-size: cover;
+  width: 80vw;
+  height: 35vw;
+}
+
+@media screen and (min-width: 768px) {
+  .future-content {
+    display: flex;
+    gap: 1vw;
+  }
+
+  #future-winter {
+    background: none;
+    width: 25vw;
+    height: 20vw;
+    position: relative;
+    z-index: 20;
+  }
+
+  #future-winter::before {
+    background: url('../content/winter.jpg');
+    content: '';
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  #future-winter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: hue-rotate(120deg);
+    z-index: -1;
+  }
+
+  #future-spring {
+    background: none;
+    width: 25vw;
+    height: 20vw;
+    position: relative;
+    z-index: 20;
+  }
+
+  #future-spring::before {
+    background: url('../content/spring.jpg');
+    content: '';
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  #future-spring::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: hue-rotate(180deg);
+    z-index: -1;
+  }
+
+  #future-spring h3,
+  #future-winter h3 {
+    font-size: 3rem;
+  }
+
+  #future-spring p,
+  #future-winter p {
+    font-size: 1.5rem;
+    background-color: rgba(247, 247, 247, 0.6);
+    padding: 0.1rem;
+  }
+}
