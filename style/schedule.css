@@ -1,0 +1,125 @@
+.main-schedule-container {
+  background-color: #383c46;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%2322242e' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+  padding: 3rem 0 3rem 0;
+}
+
+.main-schedule-container img {
+  width: 10vw;
+  height: 10vw;
+}
+
+.main-schedule-title {
+  position: relative;
+}
+
+.main-schedule-title::after {
+  content: '';
+  width: 3.5rem;
+  height: 0.1rem;
+  background-color: var(--main-second-color);
+  bottom: -1rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#sharing-txt {
+  margin-left: 1.5rem;
+}
+
+#forum-txt {
+  margin-left: 2.5rem;
+}
+
+#ignite-p {
+  margin-left: 2.5rem;
+}
+
+.main-schedule-container ul li {
+  background-color: rgba(229, 229, 229, 0.1);
+  padding: 1rem 0.7rem 1rem 0.7rem;
+  margin-right: 5vw;
+  transition: border 0.3s ease;
+  gap: 0.2rem;
+}
+
+.main-schedule-container ul li:hover {
+  border: solid #fff 0.3rem;
+}
+
+.main-schedule-container ul li img,
+.main-schedule-container ul li h3 {
+  flex: 1;
+}
+
+.main-schedule-container ul li p {
+  flex: 3;
+}
+
+.schedule-desktop-button {
+  display: none;
+}
+
+.schedule-desktop-button:hover {
+  scale: 1.1;
+}
+
+.schedule-button {
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 1rem 0 1rem 0;
+  width: 77vw;
+  background-color: var(--main-second-color);
+}
+
+.schedule-button:hover {
+  scale: 1.1;
+}
+
+@media screen and (min-width: 768px) {
+  .schedule-button {
+    display: none;
+  }
+
+  .schedule-desktop-button {
+    display: block;
+    border-bottom: solid 1px;
+    padding-bottom: 1px;
+    margin-bottom: 4rem;
+  }
+
+  .main-schedule-container ul {
+    width: 70vw;
+    gap: 0.3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .main-schedule-container ul li {
+    background-color: rgba(229, 229, 229, 0.1);
+    box-sizing: content-box;
+    padding: 2rem 0.7rem 2rem 0.7rem;
+    margin-right: 0;
+    width: 17vw;
+    transition: border 0.3s ease;
+  }
+
+  .main-schedule-container ul li img {
+    width: 3.3vw;
+    height: 3.3vw;
+  }
+
+  .main-schedule-container ul li p {
+    margin: 0;
+  }
+
+  #forum-txt,
+  #sharing-txt,
+  #ignite-p {
+    margin: 0;
+  }
+}

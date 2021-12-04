@@ -1,0 +1,114 @@
+.invitees-container {
+  background-color: #fff;
+  padding: 2rem 1rem;
+}
+
+.invitees-title {
+  position: relative;
+}
+
+.invitees-title::after {
+  content: '';
+  width: 3.5rem;
+  height: 0.1rem;
+  background-color: var(--main-second-color);
+  bottom: -1rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.invitee {
+  display: flex;
+  margin-top: 3rem;
+  gap: 4vw;
+}
+
+.invitee img {
+  position: relative;
+  top: 2.1rem;
+  width: 30vw;
+  height: 35vw;
+}
+
+.invitee-pp-container {
+  display: flex;
+  width: max-content;
+  height: max-content;
+  position: relative;
+}
+
+.invitee-pp-container::before {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZmZiI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9IiMiPjwvcmVjdD4KPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9IiMiPjwvcmVjdD4KPC9zdmc+");
+  position: absolute;
+  content: '';
+  top: 1vw;
+  left: -6vw;
+  height: 19vw;
+  width: 21vw;
+}
+
+.desc-invitee span:nth-of-type(2) {
+  width: 1.5rem;
+  height: 0.1rem;
+  background-color: var(--main-color);
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .invitees-container {
+    width: 100vw;
+    display: inline-block;
+    flex-direction: column;
+    padding: 3rem 13vw 3rem 13vw;
+  }
+
+  .invitees-title {
+    font-weight: 500;
+  }
+
+  .invitee {
+    display: inline-flex;
+    width: 30vw;
+    gap: 0;
+    margin: 2.5rem 1rem;
+  }
+
+  .invitee img {
+    top: 0;
+    width: 10vw;
+    height: 12vw;
+  }
+
+  .invitee-pp-container {
+    margin: 0;
+  }
+
+  .invitee-pp-container::before {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZmZiI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
+    width: 70%;
+    height: 70%;
+    left: -1.5rem;
+    top: -0.5rem;
+  }
+
+  .desc-invitee {
+    margin-left: 1rem;
+  }
+
+  .desc-invitee h3 {
+    margin: 0.5rem 0;
+  }
+
+  .desc-invitee span:nth-of-type(1) {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+
+  .desc-invitee p {
+    line-height: 1rem;
+  }
+}

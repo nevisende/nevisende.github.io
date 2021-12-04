@@ -5,53 +5,210 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Full-Stack Developer | nevisende</title>
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./content/favicon.ico" sizes="64x64">
+    <link rel="apple-touch-icon-precomposed" href="./content/favicon.ico" sizes="64x64">
+    <title>Startups of The Seasons</title>
 </head>
 <body>
+    <!-- <header class="mobile-menu"> -->
     <header>
-        <nav>
-            <ul class="header-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+        <a href="./index.html"><img src="./content/logo-horizontal.png" alt="Logo Of Startups of Seasons"></a>
+        <nav id="hamburger-menu">
+            <a href="#" class="no-underline" id="menu-button"><i class="fas fa-bars menu-icon" id="menu-icon"></i></a>
+            <ul>
+                <li class="red-text"><a class="no-underline main-second-color" href="./about.html">About</a></li>
+                <li><a class="no-underline main-dark-color" href="#schedule">Schedule</a></li>
+                <li><a class="no-underline main-dark-color" href="#">Join</a></li>
+                <li><a class="no-underline main-dark-color" href="#partner">Partner</a></li>
+                <li><a class="no-underline main-dark-color" href="#">News</a></li>
+                <li class="red-text 
+                           red-border"><a class="no-underline main-second-color" href="#">SAS Campaign</a></li>
             </ul>
-            <i class="menu-icon"></i>
+            
         </nav>
     </header>
-    <main class="wrapper-grid">
-        <section class="headline-section">
-            <div class="headline-content">
-                <h1 class="headline-title">Furkan Denizhan</h1>
-                <p class="headline-p">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
-If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
-                <button class="headline-button" type="button">Start collaboration</button>
-            </div>
-            <div class="headline-images">
-                <img class="headline-img2" src="./media/image_dots.svg" alt="background image">
-                <img class="headline-img" src="./media/header-section.svg" alt="background image">
-            </div>
-        </section>
-        <section class="projects-section">
-            <div class="grid-project-div-1">
-                <h2 class="section-title">Projects</h2>
-                <img src="./media/image_dots.svg" alt="square dots">
-            </div>
-            <div class="grid-project-div-2 project-container project-1">
-                <div class="project-image"></div>
-                <div class="project-content">
+    <main>
+        <div class="header-line-container
+                    animation-bg">
+            <h2 class="xxl-text
+                       red-text">"Hello sharing entrepreneur"</h2>
+            <h1 class="title
+                       xxxl-text">Creative commons national Startups Summit 2022-Winter</h1>
+            <p class="p-1
+                      white-border
+                      main-bg-color">A joyful celebration believing in the value of openness and sharing, crating a positive change with people from over 81 cities is taking place  in January, in İstanbul.</p>
+            <span class="xxl-text
+                         bold-text" id="span-1">2021.01.01 (SAT) ~ 07 (FRI)</span>
+            <span class="lg-text
+                         gray-color">@ Puplic place of İstanbul, Taksim and more</span>
+        </div>
+        <div class="main-schedule-container
+                    dp-flex
+                    flex-col
+                    justify-content-center
+                    align-items-center" id="schedule">
+            <h2 class="main-schedule-title
+                       white-text
+                       xl-text">Main Schedule</h2>
+            <ul class="dp-flex
+                       m-flex-col">
+                <li class="dp-flex
+                           flex-col
+                           m-flex-row
+                           m-mg-1
+                           align-items-center
+                           ">
+                    <img src="content/sharing.svg" class="mb-1" alt="">
+                    <h3 class="red-text
+                               bold-text
+                               lg-text">Sharing</h3>
+                    <p class="white-text
+                              center-text
+                              lg-text
+                              line-height-1" id="sharing-txt">Listen to  the speakers from various cities about the messeges of sharing and opening.</p>
+                </li>
+                <li class="dp-flex
+                           flex-col
+                           m-flex-row
+                           m-mg-1
+                           align-items-center
+                           ">
+                    <img src="content/exhibition.svg" class="mb-1" alt="">
+                    <h3 class="red-text
+                               bold-text
+                               lg-text">Exhibition</h3>
+                    <p class="white-text
+                              center-text
+                              lg-text
+                              line-height-1">Look at Datas on Google Analitic and opinion of users</p>
+                </li>
+                <li class="dp-flex
+                           flex-col
+                           m-flex-row
+                           m-mg-1
+                           align-items-center
+                           ">
+                    <img src="content/forum.svg" class="mb-1" alt="">
+                    <h3 class="red-text
+                               bold-text
+                               lg-text">Forum </h3>
+                    <p class="white-text
+                              center-text
+                              lg-text
+                              line-height-1" id="forum-txt">Have the time to share your thoughts and opinions with experts for each topic.</p>
+                </li>
+                <li class="dp-flex
+                           flex-col
+                           m-flex-row
+                           m-mg-1
+                           align-items-center
+                           ">
+                    <img src="content/workshop.svg" class="mb-1" alt="">
+                    <h3 class="red-text
+                               bold-text
+                               lg-text">Workshop</h3>
+                    <p class="white-text
+                              center-text
+                              lg-text
+                              line-height-1">Try creating your own work using open source license rather than just watching at it.</p>
+                </li>
+                <li class="dp-flex
+                           flex-col
+                           m-flex-row
+                           m-mg-1
+                           align-items-center
+                           ">
+                    <img src="content/ignite.svg" class="mb-1" alt="">
+                    <h3 class="red-text
+                               bold-text
+                               lg-text" id="ignite-title">SOS-Ignite</h3>
+                    <p class="white-text
+                              center-text
+                              lg-text
+                              line-height-1" id="ignite-p">Get opportunities to network with sponsors around the world, also after summit.</p>
+                </li>
 
-                    <h3 class="project-name">Project name goes here</h3>
-                    <ul class="project-technology-container">
-                        <li><i class="project-technology">HTML/CSS</i></li>
-                        <li><i class="project-technology">Ruby on Rails</i></li>
-                        <li><i class="project-technology">JavaScript</i></li>
-                    </ul>
-                    <button class="button project-button" type="button">See this Project <i class="fas fa-arrow-right"></i></button>
+            </ul>
+            <a class="schedule-desktop-button
+                      mg-4
+                      white-text
+                      center-text
+                      no-underline" href="#">SEE THE WHOLE PROGRAM</a>
+            <a class="schedule-button
+                      mg-4
+                      white-text
+                      center-text" href="#">Join Startups of Seasons 2021</a>
+        </div>
+        <div class="invitees-container
+                    dp-flex
+                    align-items-center
+                    justify-content-center
+                    m-flex-col">
+            <h2 class="invitees-title
+                       xl-text
+                       spec-color-text">Invitees</h2>
+            <ul class="invitees-list">
+                <!-- <li class="invitee">
+                    <div class="invitee-pp-container">
+                        <img src="./content/generated_photos_1.jpg" alt="">
+                    </div>
+                    <div class="desc-invitee">
+                        <h3>Name Surname</h3>
+                        <span class="red-text">Bla bla</span>
+                        <span></span>
+                        <p class="md-text">He is a geological engineer and a web developer and extremely committed to business ethics,He has been working as a full-stack software developer for 6 years.</p>
+                    </div>
                     
+                </li>
+                 -->
+            </ul>
+            <a class="invitee-button
+                      dp-none 
+                      m-dp-block
+                      no-underline
+                      main-bg-color
+                      mg-1
+                      mg-t-3
+                      p-1
+                      gray-border
+                      border-radius-1
+                      w-100
+                      center-text" href="#">MORE <i class="fas fa-chevron-down red-text mg-l-1"></i></a>
+        </div>
+        <div class="partner-container
+                    p-1
+                    dp-flex
+                    p-t-3
+                    p-b-3
+                    flex-col
+                    align-items-center" id="partner">
+            <h2 class="partner-title
+                       xl-text
+                       spec-color-2-text
+                       white-text">Partner</h2>
+            
+            <div class="partners  mg-auto">
+                <div class="first-line-partner 
+                            center-text">
+                    <div  class="mg-1 m-dp-inline-block img-partner">
+                        <a target="_blank" rel="noopener noreferrer" aria-label="kqed" href="http://blogs.kqed.org/newsfix/2013/09/17/111497/startups-consider-crowdfunding-to-raise-investment-capital">
+                            <img alt="kqed logo" src="https://dfon51l7zffjj.cloudfront.net/uploads/remote_files/12850-hEfVMBE4G1jsOReA0xPOY5Br/npr_2x.png" class="logo"  loading="lazy">
+                        </a>
+                    </div>
+                    <div  class="mg-1 m-dp-inline-block img-partner">
+                        <a target="_blank" rel="noopener noreferrer" aria-label="forbes" href="http://www.forbes.com/sites/techonomy/2012/03/15/would-the-jobs-act-help-small-business-or-unleash-fraud/">
+                            <img alt="forbes logo" src='https://dfon51l7zffjj.cloudfront.net/uploads/remote_files/13668-a860eoRQcqApahuM8uxtkNed/forbes_2x.png' class="logo" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="mg-1 m-dp-inline-block img-partner">
+                        <a target="_blank" rel="noopener noreferrer" aria-label="business week" href="http://www.businessweek.com/articles/2012-03-06/alone-in-a-crowd-how-crowdfunding-could-strand-startups">
+                            <img alt="business week logo" src="https://dfon51l7zffjj.cloudfront.net/uploads/remote_files/13725-cKRWvAxxVxlp7G4mdfotCMk7/bloomberg_2x.png" class="logo"  loading="lazy">
+                        </a>
+                    </div>
                 </div>
+
             </div>
             <div class="grid-project-div-3 project-container project-2">
                 <div class="project-image"></div>
@@ -155,31 +312,34 @@ If you like what you see and have a project you need coded, don’t hesitate and
                         <li>GitLab</li>
                         <li>Terminal</li>
                     </ul>
+
+                <div class="second-line-partner center-text">
+                    <div class="mg-1 m-dp-inline-block img-partner">
+                        <a target="_blank" rel="noopener noreferrer" aria-label="money cnn" href="http://money.cnn.com/galleries/2012/technology/1204/gallery.crowdfunding-startups/">
+                            <img alt="cnn money logo" src="https://d2qbf73089ujv4.cloudfront.net/uploads/remote_files/13706-lSXSQM0MzRJLHceEHzUsyT7G/cnn_2x.png" class="logo"  loading="lazy">
+                        </a>
+                    </div>
+                    <div class="mg-1 m-dp-inline-block img-partner">
+                        <a target="_blank" rel="noopener noreferrer" aria-label="pbs" href="http://www.pbs.org/mediashift/2013/09/private-equity-goes-public/">
+                            <img alt="pbs logo" src="https://dfon51l7zffjj.cloudfront.net/uploads/remote_files/12844-sjfyNtcNOXocki88TTHiZlsX/pbs_2x.png" class="logo" loading="lazy">
+                        </a>
+                    </div>    
+
                 </div>
-                <div class="about-detail"></div>
             </div>
-        </section>
-         <section class="contact-section">
-            <form  action="https://formspree.io/f/mzbyqovr" method="POST">
-                <h2>Get Started</h2>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                 <div class="contact-label-group">
-                     <label class="contact-label">
-                           <span>Your Name</span> 
-                           <input type="text" maxlength="30" required>
-                     </label>
-                     <label class="contact-label"> 
-                            <span>Your Email</span>
-                           <input type="email" name="emial" id="email" required>
-                     </label>
-                 </div>
-    
-                 <textarea name="message" id="message" cols="30" rows="10" maxlength="500" placeholder="Enter your message here..." required></textarea>
-                 <button type="submit"> Start collaboration</button>
-                 <img src="./media/contact-left-img.svg" alt="An image for the decoration">
-                 <img src="./media/contact-right-img.svg" alt="An another similar image for decoration">
-            </form>
-        </section>
+        </div>
+        
     </main>
+    <footer class="dp-flex
+                   align-items-center
+                   p-1">
+        <a href="./index.html"><img src="./content/logo-horizontal.png" alt="Logo Of Startups of Seasons"></a>
+        <div>
+            <p class="main-bg-color
+                      md-text">2021 Startups of Seasons.All rights Reserved.</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
